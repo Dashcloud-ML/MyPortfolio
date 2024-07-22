@@ -1,0 +1,44 @@
+.HistoryCard {
+	max-width: 600px;
+	margin-bottom: 1rem;
+
+	.Header {
+		border-radius: 10px 10px 0 0;
+		padding: 1rem 1.5rem;
+		background-color: rgb(0, 212, 184);
+
+		.CompanyDetails {
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-between;
+
+			h5 {
+				margin: 0 10px 0 0;
+				font-weight: 500;
+				max-width: 30%;
+			}
+		}
+
+		.Designation {
+			text-align: center;
+			h4 {
+				margin: 10px 0;
+			}
+		}
+	}
+
+	.Body {
+		padding: 1rem 1.5rem;
+		background-color: rgb(234, 234, 234);
+		border-radius: 0 0 10px 10px;
+		font-size: 0.9rem;
+
+		ul {
+			padding-inline-start: 16px;
+			li {
+				margin-bottom: 0.4rem;
+			}
+		}
+	}
+}
+

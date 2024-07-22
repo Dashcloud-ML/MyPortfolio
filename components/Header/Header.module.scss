@@ -1,0 +1,26 @@
+@import "../../styles/Shared.module.scss";
+
+.HeaderContainer {
+	.Container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		.LogoContainer {
+			display: inline-block;
+			cursor: pointer;
+			h1 {
+				font-size: 3rem;
+				margin: 1.5rem 0;
+
+				span {
+					color: rgb(0, 212, 184);
+				}
+			}
+		}
+	}
+
+	@media (max-width: 1080px) {
+		padding: 0 2rem;
+	}
+}

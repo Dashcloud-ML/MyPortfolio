@@ -1,0 +1,93 @@
+@import "../../styles/Shared.module.scss";
+
+.Main {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	margin-bottom: 4rem;
+	.Content {
+		h1 {
+			user-select: none;
+			font-size: 3.5rem;
+
+			span.Chip {
+				font-size: 1.8rem;
+				color: white;
+				padding: 0 1rem;
+				vertical-align: middle;
+				display: inline-block;
+				background: rgb(2, 175, 255);
+				border-radius: 50px;
+			}
+
+			span.Exclaimation {
+				color: rgb(0, 212, 184);
+			}
+		}
+
+		p {
+			font-weight: 500;
+			// user-select: none;
+			span {
+				color: rgb(198, 129, 0);
+			}
+			span.Tech {
+				color: rgb(0, 34, 255);
+			}
+		}
+
+		.ProjectsLink {
+			margin-left: 1rem;
+			cursor: pointer;
+
+			.ProjectsButton {
+				display: inline-block;
+			}
+
+			p {
+				font-weight: 700;
+				font-size: 0.9rem;
+				display: inline-block;
+				transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+			}
+
+			.ArrowIcon {
+				display: inline-block;
+				margin-left: 1rem;
+				vertical-align: middle;
+				transform: rotateZ(0deg);
+				transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+			}
+
+			&:hover {
+				.ArrowIcon {
+					transform: rotateZ(-45deg) translateX(0.5rem);
+				}
+				p {
+					transform: translateX(0.5rem);
+				}
+			}
+		}
+
+		.Contact {
+			margin-top: 4rem;
+			h2 {
+				font-size: 1rem;
+			}
+
+			@media (max-width: 600px) {
+				margin-top: 1rem;
+			}
+		}
+	}
+
+	.ImageContainer {
+		@media (max-width: 1080px) {
+			display: none;
+		}
+	}
+
+	@media (max-width: 1080px) {
+		padding: 0 2rem;
+	}
+}

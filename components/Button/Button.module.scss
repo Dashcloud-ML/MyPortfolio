@@ -1,0 +1,16 @@
+.ButtonContainer {
+	button {
+		outline: none;
+		padding: 0.7rem 1.5rem;
+		border: 1px solid rgb(0, 212, 184);
+		border-radius: 0;
+		font-weight: 700;
+		background-color: white;
+		transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+	
+		&:hover {
+			cursor: pointer;
+			box-shadow: 5px 5px 0 rgb(0, 212, 184);
+		}
+	}
+}
