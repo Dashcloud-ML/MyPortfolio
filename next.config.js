@@ -2,9 +2,26 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+}
+
+const isProd = process.env.NODE_ENV === 'production';
+
+module.exports = {
   images: {
-    domains: ['i.postimg.cc']
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'example.com',
+        port: '',
+        pathname: '/**',
+      },
+    ],
   },
 }
+
+
+
+
+
 
 module.exports = nextConfig

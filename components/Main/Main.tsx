@@ -2,11 +2,11 @@ import Image from "next/image"
 import Link from "next/link"
 import { useRouter } from "next/router"
 import { useCallback } from "react"
-
 import Arrow from "../../assets/arrow.png"
 import Images from "../../assets/aboutme.jpg"
 import Button from "../Button/Button"
 import styles from "./Main.module.scss"
+import { FaEnvelope, FaPhone, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const Main = () => {
 	const router = useRouter()
@@ -30,7 +30,7 @@ const Main = () => {
 					for more than 1 year.
 				</p>
 				<Button onClick={goToLinkedIn}>Hire Me</Button>
-			{/*	<span className={styles.ProjectsLink}>
+				<span className={styles.ProjectsLink}>
 					<Link href="/resume">
 						<div className={styles.ProjectsButton}>
 						<p>Projects</p>
@@ -44,15 +44,54 @@ const Main = () => {
 							</div>
 						</div>
 					</Link>
-				</span> */}
+				</span> 
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+
 				<div className={styles.Contact}>
-					<h2>
-						Contact: <br />
-						<a href="mailto:darshanwagh523@gmail.com"><span style={{color: "rgb(2, 175, 255)"}}>Email:</span> darshanwagh523@gmail.com</a><br />
-						<a href="contactno:8080062649"><span style={{color: "rgb(2, 175, 255)"}}>Mob.no:</span> +91 80800 62649</a><br />
-						<a href="Linkedin:link"><span style={{color: "rgb(2, 175, 255)"}}>Linkedin:</span> https://www.linkedin.com/in/darshan-wagh-1a1411203/</a><br />
-						<a href="git:link"><span style={{color: "rgb(2, 175, 255)"}}>Github:</span> https://github.com/Dashcloud-MLs</a>
-						</h2>
+				
+    <h2 style={{ fontSize: '20px' }}>
+      📞 Contact: <br />
+      <br />
+      <a
+        href="mailto:darshanwagh523@gmail.com"
+        aria-label="Email"
+        style={{ fontSize: '28px', marginRight: '16px', color: '#02afff' }}
+      >
+        <FaEnvelope />
+      </a>
+
+      <a
+        href="tel:+918080062649"
+        aria-label="Phone"
+        style={{ fontSize: '28px', marginRight: '16px', color: '#02afff' }}
+      >
+        <FaPhone />
+      </a>
+
+      <a
+        href="https://www.linkedin.com/in/darshan-wagh-1a1411203/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="LinkedIn"
+        style={{ fontSize: '28px', marginRight: '16px', color: '#0077B5' }}
+      >
+        <FaLinkedin />
+      </a>
+
+      <a
+        href="https://github.com/Dashcloud-ML"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="GitHub"
+        style={{ fontSize: '28px', color: '#000' }}
+      >
+        <FaGithub />
+      </a>
+    </h2>
 				</div>
 			</div>
 			<div className={styles.ImageContainer}>
