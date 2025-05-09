@@ -11,6 +11,7 @@
     "deploy": "npm run build && npm run export && gh-pages -d out"
   },
   "dependencies": {
+    "@types/react-icons": "^2.2.7",
     "icons": "^1.0.0",
     "nanoid": "^4.0.0",
     "next": "^14.2.5",

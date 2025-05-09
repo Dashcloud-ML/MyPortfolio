@@ -6,7 +6,12 @@ const nextConfig = {
 
 const isProd = process.env.NODE_ENV === 'production';
 
-module.exports = {
+module.exports =
+{
+  // Ensure static HTML export
+  exportTrailingSlash: true,
+}
+ {
   images: {
     remotePatterns: [
       {
@@ -16,8 +21,7 @@ module.exports = {
         pathname: '/**',
       },
     ],
-  },
-}
+    }
 
 
 

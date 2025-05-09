@@ -139,6 +139,21 @@
   dependencies:
     "@types/react" "*"
 
+"@types/react-icon-base@*":
+  version "2.1.6"
+  resolved "https://registry.npmjs.org/@types/react-icon-base/-/react-icon-base-2.1.6.tgz"
+  integrity sha512-ebbN1JjCm6RxBd3HdI1+8VCdiOI4qMjnl9DIHWJFrB/eYLF4mzIgdL34PIqCJBLY3vlwil9v6IHQvzsa8vgMsg==
+  dependencies:
+    "@types/react" "*"
+
+"@types/react-icons@^2.2.7":
+  version "2.2.7"
+  resolved "https://registry.npmjs.org/@types/react-icons/-/react-icons-2.2.7.tgz"
+  integrity sha512-qxc8xtwgDG5Ub/WILU9tZa7zxz2UZqOU4yXbBa+Xg+0LbP031NB9gvf1d/ALvHLGCsCf3WEVttNoW/wc30jn1w==
+  dependencies:
+    "@types/react" "*"
+    "@types/react-icon-base" "*"
+
 "@types/react@*", "@types/react@18.0.21":
   version "18.0.21"
   resolved "https://registry.npmjs.org/@types/react/-/react-18.0.21.tgz"
